@@ -25,8 +25,8 @@ const useStyles = makeStyles((theme) => ({
     // paddingLeft: 10
   },
   cover: {
-    width: 200,
-    height: 250,
+    width: "20vh",
+    height: "30vh",
   },
  
  }));
