@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/vdavydova-for6factor/static/css/main.85c800c3.chunk.css",
-    "main.js": "/vdavydova-for6factor/static/js/main.5daf0206.chunk.js",
-    "main.js.map": "/vdavydova-for6factor/static/js/main.5daf0206.chunk.js.map",
+    "main.js": "/vdavydova-for6factor/static/js/main.6614a62d.chunk.js",
+    "main.js.map": "/vdavydova-for6factor/static/js/main.6614a62d.chunk.js.map",
     "runtime-main.js": "/vdavydova-for6factor/static/js/runtime-main.0e23cca4.js",
     "runtime-main.js.map": "/vdavydova-for6factor/static/js/runtime-main.0e23cca4.js.map",
-    "static/js/2.86dad6ad.chunk.js": "/vdavydova-for6factor/static/js/2.86dad6ad.chunk.js",
-    "static/js/2.86dad6ad.chunk.js.map": "/vdavydova-for6factor/static/js/2.86dad6ad.chunk.js.map",
+    "static/js/2.fafefbda.chunk.js": "/vdavydova-for6factor/static/js/2.fafefbda.chunk.js",
+    "static/js/2.fafefbda.chunk.js.map": "/vdavydova-for6factor/static/js/2.fafefbda.chunk.js.map",
     "index.html": "/vdavydova-for6factor/index.html",
     "static/css/main.85c800c3.chunk.css.map": "/vdavydova-for6factor/static/css/main.85c800c3.chunk.css.map",
-    "static/js/2.86dad6ad.chunk.js.LICENSE.txt": "/vdavydova-for6factor/static/js/2.86dad6ad.chunk.js.LICENSE.txt"
+    "static/js/2.fafefbda.chunk.js.LICENSE.txt": "/vdavydova-for6factor/static/js/2.fafefbda.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0e23cca4.js",
-    "static/js/2.86dad6ad.chunk.js",
+    "static/js/2.fafefbda.chunk.js",
     "static/css/main.85c800c3.chunk.css",
-    "static/js/main.5daf0206.chunk.js"
+    "static/js/main.6614a62d.chunk.js"
   ]
 }
