@@ -1,12 +1,12 @@
 import React from "react";
-import MediaControlCard from "../components/MediaControlCard";
+import UserCard from "./UserCard";
 import CodeEntryForm from "../components/CodeEntryForm";
 
 export default function UserInfo() {
   return (
     <div>
       <div style={{ marginBottom: 20 }}>
-        <MediaControlCard />
+        <UserCard />
       </div>
       <div style={{ marginBottom: 20 }}>
         <CodeEntryForm />

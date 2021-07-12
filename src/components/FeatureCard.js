@@ -9,73 +9,57 @@ import Typography from "@material-ui/core/Typography";
 import CardHeader from "@material-ui/core/CardHeader";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
-    height: 200,
-    width: 1000,
+    height: 150,
+    width: 250,
     border: "none",
     boxShadow: "none",
+    margin: 5
   },
   details: {
     display: "flex",
-    flexDirection: "column"
+    flexDirection: "column",
   },
   content: {
     flex: "1 0 auto",
-    width: 650,
-    textAlign: "justify"
+    width: 150,
+    textAlign: "justify",
   },
   cover: {
-    width: 150,
-    margin: 10
+    width: 50,
+    // margin: 10,
   },
-  avatar: {
-    backgroundColor: "#0a84d1",
-    width: theme.spacing(3),
-    height: theme.spacing(3)
+  title: {
+    fontWeight: "bold",
   },
-  iconButton: {
-    padding: 10,
-    color: "#0a84d1",
-    float: "right"
-  }
 }));
 
-export default function RedeemItem(props) {
+export default function FeatureCard(props) {
   const classes = useStyles();
 
   return (
     <Card className={classes.root}>
       <div className={classes.details}>
-        <CardHeader
-          avatar={
-            <Avatar aria-label="recipe" className={classes.avatar}>
-              {props.id}
-            </Avatar>
-          }
-          titleTypographyProps={{ variant: "h6" }}
-          title={props.name}
-        />
+        <Typography
+          className={classes.title}
+          gutterBottom
+          variant="subtitle1"
+          component="h1"
+        >
+          {props.name}
+        </Typography>
         <CardContent className={classes.content}>
           <Typography variant="body1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            faucibus turpis. Turpis egestas sed tempus erat imperdiet sed
-
           </Typography>
-          <IconButton
-            className={classes.iconButton}
-            aria-label="playCircleOutlineIcon"
-          >
-            <PlayCircleOutlineIcon />
-          </IconButton>
         </CardContent>
       </div>
       <CardMedia
         className={classes.cover}
         image={props.img}
-        // title={props.name}
+
       />
     </Card>
   );

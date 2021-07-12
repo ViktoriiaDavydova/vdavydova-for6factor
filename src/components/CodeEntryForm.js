@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
   divider: {
     height: 2,
-    width: "38vh",
+    width: "32vh",
   },
 }));
 
