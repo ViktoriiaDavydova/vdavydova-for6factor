@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles({
   root: {
     width: "40vh",
-    minHeight: 250,
+    minHeight: "10vh",
     border: "none",
     boxShadow: "none",
   },
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ImgMediaCard() {
+export default function UserAccount() {
   const classes = useStyles();
 
   return (
