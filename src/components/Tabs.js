@@ -49,10 +49,7 @@ function a11yProps(index) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    // backgroundColor: theme.palette.background.paper,
-    // width: '80rem',
-    // marginLeft: 'auto',
-    // marginRight: '5%'
+
   },
   header: {
     flexGrow: 1,
@@ -61,16 +58,16 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     maxHeight: 70,
-    margin: "2.5rem 0.5rem 0.5rem 5%",
+    margin: "2.5rem 0.5rem 0.5rem 30vh",
   },
   menuButton: {
     marginRight: theme.spacing(2),
   },
   tabPanel: {
     backgroundColor: theme.palette.background.paper,
-    width: "75rem",
+    width: "100vh",
     marginLeft: "auto",
-    marginRight: "5%",
+    marginRight: "30vh",
   },
   title: {
     flexGrow: 1,
