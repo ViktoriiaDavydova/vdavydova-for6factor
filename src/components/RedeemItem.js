@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     height: 200,
-    width: 800,
+    width: 1000,
     border: "none",
     boxShadow: "none",
   },
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flex: "1 0 auto",
-    width: 600,
+    width: 800,
     textAlign: "justify"
   },
   cover: {
