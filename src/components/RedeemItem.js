@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100vh",
     border: "none",
     boxShadow: "none",
+
   },
   details: {
     display: "flex",

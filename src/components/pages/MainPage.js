@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     color: theme.palette.text.secondary,
     padding: "1rem",
-    // height: 200,
+  marginBlock: 10,
     boxShadow: "none",
   },
 }));
@@ -35,8 +35,8 @@ export default function MainPage() {
               <UserAccount />
             </Grid>
           </Grid>
-          <Grid item xs={8} container spacing={3}>
-            <Grid item xs={12} container spacing={1}>
+          <Grid item xs={8} container spacing={3} >
+            <Grid item xs={12} container spacing={1} >
               {redeemItemList.map((redeemItem) => (
                 <RedeemItem
                   key={redeemItem.id}
