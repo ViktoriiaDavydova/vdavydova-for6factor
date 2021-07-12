@@ -13,8 +13,8 @@ import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
-    height: 200,
-    width: 1000,
+    height: "20vh",
+    width: "100vh",
     border: "none",
     boxShadow: "none",
   },
@@ -24,11 +24,11 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flex: "1 0 auto",
-    width: 650,
+    width: "70vh",
     textAlign: "justify"
   },
   cover: {
-    width: 150,
+    width: "17vh",
     margin: 10
   },
   avatar: {

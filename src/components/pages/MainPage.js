@@ -11,16 +11,12 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  // box: {
-  //   height: "100%",
-  //   width: "100%",
-  // },
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
     color: theme.palette.text.secondary,
     padding: "1rem",
-    height: 200,
+    // height: 200,
     boxShadow: "none",
   },
 }));
