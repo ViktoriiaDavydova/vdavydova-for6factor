@@ -5,6 +5,7 @@ import Paper from "@material-ui/core/Paper";
 import UserAccount from "../UserAccount";
 import Grid from "@material-ui/core/Grid";
 import RedeemItem from "../RedeemItem";
+import redeemItemList from "../redeemItemList";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -39,14 +40,15 @@ export default function MainPage() {
             </Grid>
           </Grid>
           <Grid item xs={8} container spacing={3}>
-            <Grid item xs={12}>
-              <RedeemItem />
-            </Grid>
-            <Grid item xs={12}>
-            <RedeemItem />
-            </Grid>
-            <Grid item xs={12}>
-            <RedeemItem />
+            <Grid item xs={12} container spacing={1}>
+              {redeemItemList.map((redeemItem) => (
+                <RedeemItem
+                  key={redeemItem.id}
+                  id={redeemItem.id}
+                  name={redeemItem.name}
+                  img={redeemItem.img}
+                />
+              ))}
             </Grid>
           </Grid>
         </Grid>

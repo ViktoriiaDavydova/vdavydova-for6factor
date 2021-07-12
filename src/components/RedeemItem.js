@@ -9,6 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import CardHeader from "@material-ui/core/CardHeader";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -23,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flex: "1 0 auto",
-    width: 800,
+    width: 650,
     textAlign: "justify"
   },
   cover: {
@@ -43,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function MediaControlCard() {
+export default function MediaControlCard(props) {
   const classes = useStyles();
 
   return (
@@ -52,11 +53,11 @@ export default function MediaControlCard() {
         <CardHeader
           avatar={
             <Avatar aria-label="recipe" className={classes.avatar}>
-              1
+              {props.id}
             </Avatar>
           }
           titleTypographyProps={{ variant: "h6" }}
-          title="Delicious Cat Food"
+          title={props.name}
         />
         <CardContent className={classes.content}>
           <Typography variant="body1">
@@ -74,8 +75,8 @@ export default function MediaControlCard() {
       </div>
       <CardMedia
         className={classes.cover}
-        image="https://images.freeimages.com/images/large-previews/d0a/cat-food-1539210.jpg"
-        title="Delicious Cat food"
+        image={props.img}
+        title={props.name}
       />
     </Card>
   );
