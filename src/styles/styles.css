@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  background-color: #f6f6f6;
+  /* height: 100%; */
+}
+
+.app {
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+
+footer {
+  background-color: #46aae6;
+  color: white;
+  height: 5rem;
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.tabcontent {
+  width: 70%;
+  margin: 1rem auto 1rem auto;
+}
