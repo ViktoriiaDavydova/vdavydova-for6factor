@@ -6,11 +6,15 @@ import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 import IconButton from "@material-ui/core/IconButton";
 import Divider from "@material-ui/core/Divider";
 
+/**
+ * Component for displaying code entry form in the user info component
+ */
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "40vh",
     backgroundColor: "#FFFFFF",
-    padding: 5
+    padding: 5,
   },
   input: {
     flex: 1,
@@ -22,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
   inputLabel: {
     color: "black",
-    fontWeight: "bold"
+    fontWeight: "bold",
   },
   divider: {
     height: 2,

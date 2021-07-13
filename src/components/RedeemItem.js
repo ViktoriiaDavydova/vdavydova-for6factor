@@ -9,6 +9,9 @@ import Typography from "@material-ui/core/Typography";
 import CardHeader from "@material-ui/core/CardHeader";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 
+/**
+ * Component for displaying Redeem item on the first page
+ */
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,31 +20,30 @@ const useStyles = makeStyles((theme) => ({
     width: "100vh",
     border: "none",
     boxShadow: "none",
-
   },
   details: {
     display: "flex",
-    flexDirection: "column"
+    flexDirection: "column",
   },
   content: {
     flex: "1 0 auto",
     width: "70vh",
-    textAlign: "justify"
+    textAlign: "justify",
   },
   cover: {
     width: "17vh",
-    margin: 10
+    margin: 10,
   },
   avatar: {
     backgroundColor: "#0a84d1",
     width: theme.spacing(3),
-    height: theme.spacing(3)
+    height: theme.spacing(3),
   },
   iconButton: {
     padding: 10,
     color: "#0a84d1",
-    float: "right"
-  }
+    float: "right",
+  },
 }));
 
 export default function RedeemItem(props) {
@@ -63,7 +65,6 @@ export default function RedeemItem(props) {
           <Typography variant="body1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             faucibus turpis. Turpis egestas sed tempus erat imperdiet sed
-
           </Typography>
           <IconButton
             className={classes.iconButton}
@@ -73,11 +74,7 @@ export default function RedeemItem(props) {
           </IconButton>
         </CardContent>
       </div>
-      <CardMedia
-        className={classes.cover}
-        image={props.img}
-        // title={props.name}
-      />
+      <CardMedia className={classes.cover} image={props.img} />
     </Card>
   );
 }

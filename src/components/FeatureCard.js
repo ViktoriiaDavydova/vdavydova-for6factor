@@ -1,13 +1,13 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Avatar from "@material-ui/core/Avatar";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import CardHeader from "@material-ui/core/CardHeader";
-import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
+
+/**
+ * Component for displaying feature cards on the second page
+ */
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     width: "28vh",
     border: "none",
     boxShadow: "none",
-    margin: 5
+    margin: 5,
   },
   details: {
     display: "flex",
@@ -29,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
   },
   cover: {
     width: "10vh",
-    // margin: 10,
   },
   title: {
     fontWeight: "bold",
@@ -56,11 +55,7 @@ export default function FeatureCard(props) {
           </Typography>
         </CardContent>
       </div>
-      <CardMedia
-        className={classes.cover}
-        image={props.img}
-
-      />
+      <CardMedia className={classes.cover} image={props.img} />
     </Card>
   );
 }

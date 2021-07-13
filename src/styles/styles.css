@@ -2,14 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
 }
 
 body {
   font-family: "Roboto", sans-serif;
   position: relative;
   background-color: #f6f6f6;
-  /* height: 100%; */
 }
 
 .app {
@@ -20,9 +18,12 @@ body {
   padding-bottom: 5rem;
 }
 
+/* align text in footer */
 .alignleft {
   float: left;
 }
+
+/*align text in footer */
 .alignright {
   float: right;
 }
@@ -37,7 +38,7 @@ footer {
   width: 100%;
 }
 
-
+/* general for all tabs */
 .tabcontent {
   width: 70%;
   margin: 1rem auto 1rem auto;

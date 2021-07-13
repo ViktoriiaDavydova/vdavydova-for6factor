@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import SwipeableViews from 'react-swipeable-views';
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
@@ -9,10 +8,14 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Toolbar from "@material-ui/core/Toolbar";
 import logo from "../images/logo.png";
-import MainPage from "./pages/MainPage";
-import Page2 from "./pages//Page2";
-import Page3 from "./pages//Page3";
-import Page4 from "./pages//Page4";
+import MainPage from "../pages/MainPage";
+import Page2 from "../pages/Page2";
+import Page3 from "../pages/Page3";
+import Page4 from "../pages/Page4";
+
+/**
+ * Component for displaying header and tab bar
+ */
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -48,9 +51,7 @@ function a11yProps(index) {
 }
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-
-  },
+  root: {},
   header: {
     flexGrow: 1,
     backgroundColor: "#46aae6",
@@ -84,20 +85,11 @@ export default function FullWidthTabs() {
     setValue(newValue);
   };
 
-  //   const handleChangeIndex = (index) => {
-  //     setValue(index);
-  //   };
-
   return (
-   
     <div className={classes.root}>
-
       <AppBar position="static" className={classes.header}>
         <Toolbar>
           <img src={logo} alt="logo" className={classes.logo} />
-          {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton> */}
           <Typography variant="h6" className={classes.title}>
             Redeem for
             <br />
@@ -112,6 +104,7 @@ export default function FullWidthTabs() {
           variant="fullWidth"
           aria-label="full width tabs example"
           className={classes.tabPanel}
+
         >
           <Tab label="Page One" {...a11yProps(0)} />
           <Tab label="Page Two" {...a11yProps(1)} />
@@ -119,12 +112,7 @@ export default function FullWidthTabs() {
           <Tab label="Page Four" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
-      {/* <SwipeableViews
-        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-        index={value}
-        onChangeIndex={handleChangeIndex}
-      > */}
-      <TabPanel value={value} index={0} dir={theme.direction} >
+      <TabPanel value={value} index={0} dir={theme.direction}>
         <MainPage />
       </TabPanel>
       <TabPanel value={value} index={1} dir={theme.direction}>
@@ -136,9 +124,6 @@ export default function FullWidthTabs() {
       <TabPanel value={value} index={3} dir={theme.direction}>
         <Page4 />
       </TabPanel>
-      {/* </SwipeableViews> */}
-     
     </div>
-
   );
 }

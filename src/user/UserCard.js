@@ -5,31 +5,29 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 
-
+/**
+ * Component for displaying user picture, name and pts ammount
+ */
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     width: "40vh",
     boxShadow: "none",
-   },
+  },
   details: {
     display: "flex",
     flexDirection: "column",
-    // paddingLeft: 10
   },
   content: {
-    // flex: "1 0 auto",
     margin: "auto",
     textAlign: "center",
-    // paddingLeft: 10
   },
   cover: {
     width: "20vh",
     height: "30vh",
   },
- 
- }));
+}));
 
 export default function UserCard() {
   const classes = useStyles();
@@ -43,7 +41,7 @@ export default function UserCard() {
         title="Cat John"
       />
       <div className={classes.details}>
-        <CardContent className={classes.content} >
+        <CardContent className={classes.content}>
           <Typography component="h3" variant="h3">
             John
           </Typography>
@@ -51,7 +49,6 @@ export default function UserCard() {
             500 pts
           </Typography>
         </CardContent>
-        
       </div>
     </Card>
   );
