@@ -19,6 +19,8 @@ body {
   font-family: "Roboto", sans-serif;
   position: relative;
   background-color: #f6f6f6;
+  width: 100%;
+    height: auto;
 }
 
 .app {
